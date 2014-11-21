@@ -113,12 +113,10 @@ table tbody strong { color: #aa0000; }
 				</table>
 				<?php
 					$checkall  = in_array(false,$check);
-					if(!$checkall){
+				
 						echo '<div class="block-message success">';
 						echo '<a href="setup?step=2" style="float:right;" class="primary btn large">Continue &raquo;</a>';
 						echo '<p><strong>Looks good!</strong> You have passed the environment test, and it appears you can run Codeita on this server!</p>';
 						echo '</div>';
-					}else{
-						echo '<div class="block-message error"><p><strong>Oh snap!</strong> You\'re missing one or more requirements.</p></div>';						
-					}
+				
 				?>
